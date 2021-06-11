@@ -6,11 +6,13 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
-$request = Request::createFromGlobals(); //acá creamos el objeto request
+$request = Request::createFromGlobals();
 
 if($request->isMethod("POST")){
-    // $responseJson= new JsonResponse();
-    print("POST");
+    // var_dump($request->request->all());
+    $response= new JsonResponse($request->request->all());
+    $response->send();
+
 }
 else if($request->isMethod("GET")){
     print("GET");
