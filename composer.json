@@ -1,0 +1,12 @@
+{
+    "name": "composer-test/gabriel-valera",
+    "description": "test composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "gabriel valera",
+            "email": "gabrielj2814@hotmail.com"
+        }
+    ],
+    "require": {}
+}
