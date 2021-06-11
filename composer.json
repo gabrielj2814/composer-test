@@ -8,5 +8,7 @@
             "email": "gabrielj2814@hotmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/http-foundation": "*"
+    }
 }
